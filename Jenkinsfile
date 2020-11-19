@@ -7,10 +7,5 @@ pipeline {
                 sh './deploy.sh'
             }
         } 
-        stage('login and push to dockerhub') {
-            steps {
-                
-            }
-        } 
     }
 }
