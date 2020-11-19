@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('ssh into pytest ec2') {
             steps {
-                sh 'ssh ubuntu@3.250.22.243'
+                sh 'chmod +x deploy.sh'
+                sh './deploy.sh'
             }
         } 
     }
