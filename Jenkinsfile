@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('connect to test vm') {
+        stage('Connect to Test VM') {
             steps {
                 sh 'chmod +x deploy.sh'
                 sh './deploy.sh'
