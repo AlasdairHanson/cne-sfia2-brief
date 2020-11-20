@@ -1,4 +1,5 @@
 #! /bin/bash
+sudo su - jenkins
 ssh -tt -i /home/jenkins/.ssh/id_rsa ubuntu@54.78.212.171 << EOF
 
 sudo rm -r cne-sfia2-brief
