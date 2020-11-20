@@ -4,7 +4,7 @@ pipeline {
         stage('Connect to Test VM') {
             steps {
                 sh 'chmod +x deploy.sh'
-                sh './deploy.sh'
+                sh 'sudo ./deploy.sh'
             }
         } 
     }
