@@ -11,7 +11,7 @@ export TEST_DATABASE_URI=mysql+pymysql://root:dB4a15!4@terraform-202011201856489
 
 mysql -h terraform-20201120185648962100000002.clh36ghk8zgg.eu-west-1.rds.amazonaws.com -P 3306 -u dbProject -p dB4a15!4 < cne-sfia2-brief/database/Create.sql
 
-docker-compose run -d
+docker-compose up -d
 
 docker exec backend bash -c "pytest tests/ --cov application >> backend_test.txt
 docker exec frontend bash -c "pytest tests/ --cov application >> frontend_test.txt
