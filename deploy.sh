@@ -9,9 +9,8 @@ export SECRET_KEY='jdfghejbfkvoi4e34'
 export DATABASE_URI='mysql+pymysql://dbProject:dB4a15!4@terraform-20201120185648962100000002.clh36ghk8zgg.eu-west-1.rds.amazonaws.com:3306/users'
 export TEST_DATABASE_URI='mysql+pymysql://dbProject:dB4a15!4@terraform-20201120185648962100000002.clh36ghk8zgg.eu-west-1.rds.amazonaws.com:3306/testdb'
 
-#DATABASE
 mysql -h terraform-20201120185648967400000003.clh36ghk8zgg.eu-west-1.rds.amazonaws.com -P 3306 -u dbProject -p'dB4a15!4' < cne-sfia2-brief/database/Create.sql
-#TEST DATABASE
+
 mysql -h terraform-20201120185648962100000002.clh36ghk8zgg.eu-west-1.rds.amazonaws.com -P 3306 -u dbProject -p'dB4a15!4' < cne-sfia2-brief/database/Create.sql
 
 sudo -E DATABASE_URI=$DATABASE_URI TEST_DATABASE_URI=$TEST_DATABASE_URI SECRET_KEY=$SECRET_KEY docker-compose up -d
