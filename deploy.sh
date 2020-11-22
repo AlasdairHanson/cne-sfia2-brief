@@ -18,10 +18,10 @@ sudo -E DATABASE_URI=$DATABASE_URI TEST_DATABASE_URI=$TEST_DATABASE_URI docker-c
 docker exec backend bash -c "pytest tests/ --cov application" >> backend_test.txt
 docker exec frontend bash -c "pytest tests/ --cov application" >> frontend_test.txt
 
-docker tag $(sudo docker images --filter=reference=backend --format "{{.ID}}") ahanson1/backend:backend
+docker tag $(sudo docker images --filter=reference=backend --format "{{.ID}}") ahanson1/backend:latest
 docker push ahanson1/backend
 
-docker tag $(sudo docker images --filter=reference=frontend --format "{{.ID}}") ahanson1/frontend:frontend
+docker tag $(sudo docker images --filter=reference=frontend --format "{{.ID}}") ahanson1/frontend:latest
 docker push ahanson1/frontend
 
 docker-compose down
