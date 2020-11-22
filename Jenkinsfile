@@ -15,8 +15,8 @@ pipeline {
         } 
         stage('Run kubectl pods') {
             steps {
-                sh "kubectl create -f frontend.yaml"
-                sh "kubectl create -f backend.yaml"               
+                sh "kubectl create -f ~/frontend.yaml"
+                sh "kubectl create -f ~/backend.yaml"               
             }
         }
     }
