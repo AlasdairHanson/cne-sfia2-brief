@@ -6,7 +6,6 @@ sudo rm -r cne-sfia2-brief
 
 git clone https://github.com/AlasdairHanson/cne-sfia2-brief
 
-export SECRET_KEY='jdfghejbfkvoi4e34'
 export DATABASE_URI='mysql+pymysql://dbProject:dB4a15!4@terraform-20201123081921950000000003.clh36ghk8zgg.eu-west-1.rds.amazonaws.com:3306/users'
 export TEST_DATABASE_URI='mysql+pymysql://dbProject:dB4a15!4@terraform-20201123081921950000000003.clh36ghk8zgg.eu-west-1.rds.amazonaws.com:3306/testdb'
 
